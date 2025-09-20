@@ -10,6 +10,7 @@ function HeaderLeft() {
     <img src={logo} alt="Logo" className="logo" />
     <span>Cosmic</span>
   </a>
+
  </div>
  </>
   );
