@@ -1,0 +1,25 @@
+.left{
+     height: 1.2vw;
+    width: 2.2vw;
+    margin-top: 0.8vw;
+    margin-left: 0.9vw;
+   
+
+}
+.link{
+    height: 1.2vw;
+    display: flex;
+    gap: 0.3vw;
+     text-decoration: none;
+  
+}
+.logo{
+    height: 1.2 vw;
+   
+}
+span{
+    color: rgba(30, 30, 30, 0.807);
+    display: grid;
+    align-items: center;
+    font: 0.9vw sans-serif;
+}
