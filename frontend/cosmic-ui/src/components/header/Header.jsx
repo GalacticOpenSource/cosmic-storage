@@ -1,7 +1,6 @@
 
 import HeaderLeft from "./HeaderLeft";
-// import HeaderCenter from "./HeaderCenter";
-// import HeaderRight from "./HeaderRight";
+import HeaderCenter from "./HeaderCenter";
 import "./Header.css";
 
 function Header() {
@@ -9,6 +8,7 @@ function Header() {
   <>
 <header className="headContainer">
 <HeaderLeft/>
+<HeaderCenter/>
 </header>
   </>
   );
