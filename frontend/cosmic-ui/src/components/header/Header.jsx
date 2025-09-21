@@ -2,7 +2,9 @@
 import HeaderLeft from "./HeaderLeft";
 import HeaderCenter from "./HeaderCenter";
 import HeaderRight from "./HeaderRight";
+import HeaderRighteast from "./HeaderRighteast";
 import "./Header.css";
+
 
 function Header() {
   return (
@@ -11,6 +13,7 @@ function Header() {
 <HeaderLeft/>
 <HeaderCenter/>
 <HeaderRight/>
+<HeaderRighteast/>
 </header>
   </>
   );
