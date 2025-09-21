@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-.v1{
-color: red;
+#main{
+display: flex;
+flex-direction: column;
 }
-=======
->>>>>>> main
