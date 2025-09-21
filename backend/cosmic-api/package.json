@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "cosmic-api",
-=======
-  "name": "your-project",
->>>>>>> main
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
