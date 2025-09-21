@@ -1,0 +1,46 @@
+.Left {
+  display: flex;
+  width: 16vw;
+  flex-direction: column;
+  background-color: white;
+}
+.L {
+  margin-top: 3vh;
+  width: 16vw;
+
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  
+}
+nav{
+  padding: 1rem;
+  height: 8vw;
+
+
+}
+a{
+  display: flex;
+  gap: 1vw;
+  font: 1vh sans-serif;
+  text-decoration: none;
+}
+.svg1{
+  margin-left: 2vw;
+  height: 3vh;
+  width: 3vw;
+}
+
+/* .nav1{
+  background-color: white;
+} */
+.L1{
+  font: 1vh sans-serif;
+  display: flex;
+  justify-content: start;
+ background-color: rgba(249, 251, 255, 0.724);
+padding: 1.2vh 0.1vw ;
+   border-radius: 24px;
+     border: 1px solid #1253d57c;
+ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}

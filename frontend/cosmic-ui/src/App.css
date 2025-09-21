@@ -1,4 +1,18 @@
-#main{
-display: flex;
-flex-direction: column;
+#main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full viewport height */
+}
+
+header {
+  height: 60px; /* fixed header height */
+}
+
+.body {
+  flex: 1;        /* take up all available space */
+  overflow: auto; /* scroll if content is long */
+}
+
+footer {
+  height: 40px; /* fixed footer height */
 }
