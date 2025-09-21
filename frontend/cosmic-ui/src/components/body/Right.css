@@ -1,0 +1,41 @@
+.drive{
+    display: flex;
+    flex-direction: column;
+width: 80vw;
+margin-left: 2vw;
+margin-top: 2vh;
+gap: 4vh;
+ padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  color: #444;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+.file-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.file-name {
+  vertical-align: middle;
+}
