@@ -2,7 +2,8 @@
   display: flex;
   width: 16vw;
   flex-direction: column;
-  background-color: white;
+  background-color: rgba(228, 226, 226, 0.12);
+
 }
 .L {
   margin-top: 3vh;
