@@ -1,5 +1,5 @@
-
-import { FaFilePdf, FaFileWord, FaFileImage, FaFolder } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaFilePdf, FaFileWord, FaFileImage, FaFolder, FaEllipsisV } from "react-icons/fa";
 import "./Right.css";
 
 const files = [
@@ -7,6 +7,20 @@ const files = [
   { name: "IMG_20240605_105315.jpg", type: "img", reason: "You opened · 25 Jun 2025", owner: "me", location: "My Drive" },
   { name: "Your big idea", type: "folder", reason: "You opened · 5 Aug 2025", owner: "me", location: "My Drive" },
   { name: "abcidofvarad.pdf", type: "pdf", reason: "You opened · 21 Dec 2024", owner: "me", location: "My Drive" },
+  { name: "Resume", type: "doc", reason: "You opened · 19 Sept 2025", owner: "me", location: "My Drive" },
+  { name: "IMG_20240605_105315.jpg", type: "img", reason: "You opened · 25 Jun 2025", owner: "me", location: "My Drive" },
+  { name: "Your big idea", type: "folder", reason: "You opened · 5 Aug 2025", owner: "me", location: "My Drive" },
+  { name: "abcidofvarad.pdf", type: "pdf", reason: "You opened · 21 Dec 2024", owner: "me", location: "My Drive" },
+  { name: "Resume", type: "doc", reason: "You opened · 19 Sept 2025", owner: "me", location: "My Drive" },
+  { name: "IMG_20240605_105315.jpg", type: "img", reason: "You opened · 25 Jun 2025", owner: "me", location: "My Drive" },
+  { name: "Your big idea", type: "folder", reason: "You opened · 5 Aug 2025", owner: "me", location: "My Drive" },
+  { name: "abcidofvarad.pdf", type: "pdf", reason: "You opened · 21 Dec 2024", owner: "me", location: "My Drive" },
+
+{ name: "Resume", type: "doc", reason: "You opened · 19 Sept 2025", owner: "me", location: "My Drive" },
+  { name: "IMG_20240605_105315.jpg", type: "img", reason: "You opened · 25 Jun 2025", owner: "me", location: "My Drive" },
+  { name: "Your big idea", type: "folder", reason: "You opened · 5 Aug 2025", owner: "me", location: "My Drive" },
+  { name: "abcidofvarad.pdf", type: "pdf", reason: "You opened · 21 Dec 2024", owner: "me", location: "My Drive" },
+
 ];
 
 function getFileIcon(type) {
@@ -20,33 +34,47 @@ function getFileIcon(type) {
 }
 
 function Right() {
+
+
   return (
+    <>
+ 
     <div className="drive">
-        <diV>Welcome to Cosmic</diV>
+
       <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Reason suggested</th>
-            <th>Owner</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          {files.map((file, index) => (
-            <tr key={index}>
-              <td>
-                <span className="file-icon">{getFileIcon(file.type)}</span>
-                <span className="file-name">{file.name}</span>
-              </td>
-              <td>{file.reason}</td>
-              <td>{file.owner}</td>
-              <td>{file.location}</td>
-            </tr>
-          ))}
-        </tbody>
+     <thead>
+  <tr>
+    <th>Name</th>
+    <th>Reason suggested</th>
+    <th>Owner</th>
+    <th>Location</th>
+    <th>Actions</th>
+  </tr>
+</thead>
+<tbody>
+  {files.map((file, index) => (
+    <tr key={index}>
+      <td>
+        <span className="file-icon">{getFileIcon(file.type)}</span>
+        <span className="file-name">{file.name}</span>
+      </td>
+      <td>{file.reason}</td>
+      <td>{file.owner}</td>
+      <td>{file.location}</td>
+      <td>
+        {/* 3 dots menu */}
+
+        <span className="menu-icon">⋮</span>
+    
+      </td>
+    </tr>
+  ))}
+</tbody>
+
       </table>
+      
     </div>
+    </>
   );
 }
 

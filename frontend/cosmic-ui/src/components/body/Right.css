@@ -1,3 +1,4 @@
+
 .drive{
     display: flex;
     flex-direction: column;
@@ -7,9 +8,13 @@ margin-top: 2vh;
 gap: 4vh;
  padding: 20px;
   font-family: Arial, sans-serif;
+  height: 80vh;
+    overflow-y: auto;
 }
 
-
+tbody{
+  height: 50%;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -38,4 +43,52 @@ tr:hover {
 
 .file-name {
   vertical-align: middle;
+}
+.dots {
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 120px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.dropdown-content button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+.click{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.menu-icon{
+  padding-left: 0.3vw;
+  border-radius: 8px;
+  width: 1vw;
+box-shadow: #444;
+cursor: pointer;
 }
