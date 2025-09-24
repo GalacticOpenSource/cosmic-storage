@@ -6,13 +6,13 @@ import HeaderRighteast from "./HeaderRighteast";
 import "./Header.css";
 
 
-function Header() {
+function Header({ onButtonClick }) {
   return (
   <>
 <header className="headContainer">
 <HeaderLeft/>
 <HeaderCenter/>
-<HeaderRight/>
+<HeaderRight onButtonClick={onButtonClick}/>
 <HeaderRighteast/>
 </header>
   </>

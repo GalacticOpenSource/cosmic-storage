@@ -16,3 +16,7 @@ header {
 footer {
   height: 40px; /* fixed footer height */
 }
+.box{
+  height: 50vh;
+  width: 50vh;
+}

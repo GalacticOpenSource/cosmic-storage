@@ -1,10 +1,10 @@
 import profileIcon from "../../assets/icons/profile.svg";
 import "./HeaderRight.css";
 
-function HeaderRight() {
+function HeaderRight({ onButtonClick }) {
   return (
     <div className="header-right">
-      <button className="btn">
+      <button className="btn"  onClick={onButtonClick} >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 -960 960 960"
