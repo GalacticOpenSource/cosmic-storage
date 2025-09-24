@@ -7,8 +7,11 @@ function Body() {
   <>
 <div className="body">
 <Left/>
+
+
+
 <Right/>
-<footer/>
+
 </div>
   </>
   );
