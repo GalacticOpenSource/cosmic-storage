@@ -6,9 +6,12 @@ function Popup({ onClose,  sendDataToParent }) {
  const [message, setMessage] = useState("");
  const [file, setFile] = useState(null);
   const [showToast, setShowToast] = useState(false);
+  const [files, setFiles] = useState([]);
+  const [uploadedFiles, setUploadedFiles] = useState([]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  setFiles(event.target.files); // FileList
     const formData = new FormData(event.target);
 
     for (const [key, value] of formData.entries()) {
@@ -16,7 +19,7 @@ function Popup({ onClose,  sendDataToParent }) {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/submit", {
+      const response = await fetch("http://localhost:3000/uploads", {
         method: "POST",
         body: formData,
       });
@@ -26,7 +29,7 @@ function Popup({ onClose,  sendDataToParent }) {
       setMessage(result);
      sendDataToParent(result);
     setShowToast(true);
-
+  setUploadedFiles(result.files);
     setTimeout(() => {
 
  onClose();
@@ -36,7 +39,10 @@ function Popup({ onClose,  sendDataToParent }) {
       setMessage("Error submitting form!");
     }
   };
-
+setTimeout(()=>{
+  console.log(files);
+console.log(uploadedFiles);
+},3000)
   return (
         <div className="popup-overlay">
 
@@ -50,6 +56,7 @@ function Popup({ onClose,  sendDataToParent }) {
           <input
             id="file-upload"
             type="file"
+            multiple
             name="user-input"
             style={{ display: "none" }}
           />
